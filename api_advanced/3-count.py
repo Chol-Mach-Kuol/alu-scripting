@@ -9,7 +9,7 @@ def count_words(subreddit, word_list, counts={}, after=None):
         counts = {w.lower(): 0 for w in word_list}
 
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "linux:api_advanced:v1.0 (by /u/api_advanced)"}
+    headers = {"User-Agent": "MyBot/1.0 by Chol-Mach-Kuol"}
     params = {"limit": 100}
     if after:
         params["after"] = after
